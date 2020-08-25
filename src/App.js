@@ -1,24 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import CounterHook from './components/CounterHook';
+import Counter1 from './components/Counter1';
+import ArrayCounter from './components/ArrayCounter';
+import DataFetching from './components/DataFetching';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <CounterHook></CounterHook>
+     <Counter1></Counter1>
+     <ArrayCounter></ArrayCounter>
+     <DataFetching></DataFetching>
     </div>
   );
 }
